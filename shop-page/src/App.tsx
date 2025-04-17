@@ -1,9 +1,14 @@
-import './App.css'
+import "./App.css";
+import { BestSellers } from "./BestSeller";
+import { Header } from "./Header";
 
 function App() {
   return (
-    <div>App</div>
-  )
+    <div className="appContainer">
+      <Header/>
+      <BestSellers/>
+    </div>
+  );
 }
 
-export default App
+export default App;
