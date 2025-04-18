@@ -19,23 +19,6 @@ export type Product = {
     __v: number;
 };
 
-export type Product = {
-    _id: string;
-    id: number;
-    title: string;
-    price: number;
-    description: string;
-    category: string;
-    image: string;
-    rating: {
-      rate: number;
-      count: number;
-    };
-    createdAt: string;
-    updatedAt: string;
-    __v: number;
-  };
-
 export const BestSellers = () => {
     const [products, setProducts] = useState<Product[]>([])
 
