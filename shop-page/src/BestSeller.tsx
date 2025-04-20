@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
 
-export type Product = {
+export type ProductType = {
     _id: string;
     id: number;
     title: string;
@@ -20,7 +20,7 @@ export type Product = {
 };
 
 export const BestSellers = () => {
-    const [products, setProducts] = useState<Product[]>([])
+    const [products, setProducts] = useState<ProductType[]>([])
 
     useEffect(() => {
         axios.get("https://masterclass.kimitsu.it-incubator.io/api/products")
