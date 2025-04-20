@@ -13,7 +13,6 @@ function App() {
         <Route path="/" element={ <BestSellers /> } />
         <Route path="/product" element={ <Product /> } />
       </Routes>
-      <BestSellers/>
     </div>
   );
 }
