@@ -106,35 +106,37 @@
 }
 
 
-/* Продукт */
+/* Стили для флекс-контейнера товара (изображение и блок с информацией о товаре, кнопки назад и добавить в тележку) */
 .product {
   display: flex;
   column-gap: 48px;
   margin-bottom: 62px;
 }
 
-
+/* Стили для изображения товара */
 .product img {
   width: 60%;
   height: 504px;
   object-fit: contain;
 }
 
+/* Стили для контейнера информационного блока товара */
 .product .info {
   width: 40%;
   display: flex;
   flex-direction: column;
 }
 
+/* Стили для названия товара */
 .product .info .title {
   color: #22262A;
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
-  font-weight: 500px;
   margin: 0 0 7px 0;
 }
 
+/* Стили для стоимости товара */
 .product .info .price {
   color: #2068F8;
   font-size: 20px;
@@ -143,6 +145,7 @@
   margin: 0 0 7px 0;
 }
 
+/* Стили для рейтинг-контейнера товара (в контейнере текст с рейтингом в цифрах и svg-звезда) */
 .product .info .rating {
   display: flex;
   align-items: center;
@@ -151,6 +154,7 @@
   margin-bottom: 30px;
 }
 
+/* Стили для текста с цифрами в рейтинг-контейнере товара */
 .product .info .rating p {
   font-weight: 400;
   font-size: 16px;
@@ -159,6 +163,7 @@
   margin: 0 7px 0 0;
 }
 
+/* Стили для svg-звезды в рейтинг-контейнере товара */
 .product .info .rating img {
   width: 16px;
   height: 16px;
