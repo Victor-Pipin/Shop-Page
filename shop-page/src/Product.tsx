@@ -6,12 +6,13 @@ import axios from "axios"
 import { useEffect, useState } from "react"
 import type { ProductType } from "./BestSeller.tsx"
 import ratingStar from "./assets/img/rating.svg"
+import whiteCart from "./assets/img/cartWhite.svg"
 
 export const Product = () => {
     const [product, setProduct] = useState<ProductType | null>(null)
 
     useEffect(() => {
-        axios.get("https://masterclass.kimitsu.it-incubator.io/api/products/1")
+        axios.get("https://masterclass.kimitsu.it-incubator.io/api/products/4")
     .then((res) => {
         const product = res.data
         setProduct(product)
@@ -26,14 +27,20 @@ export const Product = () => {
         <div>
             <div>Заглушка. Кнопка назад?</div>
             <div className="product">
-                <img className="product img" src={product.image} alt="Black Hoodie" />
-                <div className="product info">
-                    <p className="product info title">{product.title}</p>
-                    <p className="product info price">$ {product.price}</p>
-                    <div className="product info rating">
+                <img src={product.image} alt="Black Hoodie" />
+                <div className="info">
+                    <p className="title">{product.title}</p>
+                    <p className="price">$ {product.price}</p>
+                    <div className="rating">
                         <p>Raiting: {product.rating.rate}</p>
                         <img src={ratingStar} alt="yellow svg-star" />
                     </div>
+                    <div className="category">
+                        <span>Category:</span>
+                        <p>{product.category}</p>
+                    </div>
+                    <p className="description">{product.description}</p>
+                    <button><img src={whiteCart} alt="White cart icon" />Add To Cart</button>
                 </div>
             </div>
         </div>
