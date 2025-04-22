@@ -169,6 +169,7 @@
   height: 16px;
 }
 
+/* Стили для контейнера-категории товара */
 .product .info .category {
   font-weight: 500;
   font-size: 16px;
@@ -179,18 +180,22 @@
   margin-bottom: 26px;
 }
 
+/* Стили для контента в элементе span в контейнере-категории товара */
 .product .info .category span {
-  margin-right: 70px;
+  margin-right: 10px;
 }
 
+/* Стили для контента в элементе p в контейнере-категории товара */
 .product .info .category p {
   margin: 0;
 }
 
+/* Стили для псевдокласса :first-letter для контента в элементе p в контейнере-категории товара, делают заглавной первую букву */
 .product .info .category p:first-letter {
   text-transform: uppercase;
 }
 
+/* Стили для текстового описания товара */
 .product .info .description {
   font-weight: 400;
   font-size: 16px;
@@ -200,6 +205,7 @@
   flex: 1 1;
 }
 
+/* Стили для кнопки-добавления товара в тележку */
 .product .info button {
   background: #2068F8;
   border-radius: 4px;
@@ -215,6 +221,7 @@
   justify-content: center;
 }
 
+/* Стили для изображения(белой svg-тележки) в кнопке-добавлении товара в тележку */
 .product .info button img {
   width: 18px;
   height: 18px;
