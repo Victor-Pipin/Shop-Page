@@ -2,6 +2,16 @@
 // (if (product === null)...) Добавлена  условная отрисовка (conditional rendering). Необходима, что бы не было ошибки из-за асинхронщины 
 // Проверяется, загружены ли данные о товаре, и, если они еще не загружены (т.е. product === null), отображается сообщение о загрузке.
 
+    // В каком порядке работатет код в компоненте Product: 
+    // 1. Заводится состояние product со значением (null)
+    // 2. Пропускается useEffect т.к. асинхронщина, код в return не отработает(не получены данные) поэтому...
+    // 3. Делаю ранний return в проверке состояния на null - if (product === null)..., заодно подстраховка если данные всё же не придут -
+    // отобразиться <h2>Загрузка карточки товара...</h2>
+    // 4. Далее очередь useEffect, где устанавливаю полученные данные в состояние product и теперь он уже не null, если состояние 
+    // изменилось по правилам react происходит перерисовка... 
+    // 5. Снова происходит  проверка состояния product на null, не отрабатывает т.к. в состояние установлены данные полученные с сервера,
+    // далее в return отрсовывается jsx на основе полученных данных
+
 import axios from "axios"
 import { useEffect, useState } from "react"
 import type { ProductType } from "./BestSeller.tsx"
@@ -12,7 +22,7 @@ export const Product = () => {
     const [product, setProduct] = useState<ProductType | null>(null)
 
     useEffect(() => {
-        axios.get("https://masterclass.kimitsu.it-incubator.io/api/products/10")
+        axios.get("https://masterclass.kimitsu.it-incubator.io/api/products/6")
     .then((res) => {
         const product = res.data
         setProduct(product)
