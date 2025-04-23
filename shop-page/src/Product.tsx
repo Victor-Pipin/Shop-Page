@@ -12,7 +12,7 @@ export const Product = () => {
     const [product, setProduct] = useState<ProductType | null>(null)
 
     useEffect(() => {
-        axios.get("https://masterclass.kimitsu.it-incubator.io/api/products/4")
+        axios.get("https://masterclass.kimitsu.it-incubator.io/api/products/10")
     .then((res) => {
         const product = res.data
         setProduct(product)
