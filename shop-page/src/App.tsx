@@ -11,7 +11,7 @@ function App() {
       <Header/>
       <Routes>
         <Route path="/" element={ <BestSellers /> } />
-        <Route path="/product" element={ <Product /> } />
+        <Route path="/product/:productId" element={ <Product /> } />
       </Routes>
     </div>
   );
