@@ -14,15 +14,18 @@
 
 import axios from "axios"
 import { useEffect, useState } from "react"
+import { useParams } from "react-router"
 import type { ProductType } from "./BestSeller.tsx"
 import ratingStar from "./assets/img/rating.svg"
 import whiteCart from "./assets/img/cartWhite.svg"
 
 export const Product = () => {
+    const { productId } = useParams()
+
     const [product, setProduct] = useState<ProductType | null>(null)
 
     useEffect(() => {
-        axios.get("https://masterclass.kimitsu.it-incubator.io/api/products/6")
+        axios.get(`https://masterclass.kimitsu.it-incubator.io/api/products/${productId}`)
     .then((res) => {
         const product = res.data
         setProduct(product)

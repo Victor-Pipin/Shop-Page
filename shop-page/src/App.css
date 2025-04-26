@@ -86,6 +86,8 @@
   align-self: center;
   margin-bottom: 36px;
   cursor: pointer;
+  text-decoration: none;
+  text-align: center;
 }
 
 
