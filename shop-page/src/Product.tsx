@@ -14,10 +14,11 @@
 
 import axios from "axios"
 import { useEffect, useState } from "react"
-import { useParams } from "react-router"
+import { useParams, Link } from "react-router"
 import type { ProductType } from "./BestSeller.tsx"
 import ratingStar from "./assets/img/rating.svg"
 import whiteCart from "./assets/img/cartWhite.svg"
+import arrowBack from "./assets/img/arrowBack.svg"
 
 export const Product = () => {
     const { productId } = useParams()
@@ -38,7 +39,12 @@ export const Product = () => {
 
     return (
         <div>
-            <div>Заглушка. Кнопка назад?</div>
+            <div className="arrowBack">
+            <Link to="/"><img src={arrowBack} 
+                alt="Back arrow icon to the page with product cards" />
+                Back to Best Seller
+            </Link>
+            </div>
             <div className="product">
                 <img src={product.image} alt="Black Hoodie" />
                 <div className="info">
