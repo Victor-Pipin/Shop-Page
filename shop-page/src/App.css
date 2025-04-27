@@ -1,11 +1,9 @@
-
 /* Стили для контейнера всего приложения */
 .appContainer {
   width: 1308px;
   padding: 0 66px;
   margin: 0 auto;
 }
-
 
 /* Шапка сайта */
 .header {
@@ -14,7 +12,6 @@
   padding: 25px 0;
 }
 
-
 /* Стили для страницы - продукты */
 .bestSeller {
   margin-bottom: 100px;
@@ -22,7 +19,7 @@
 
 .bestSeller h2 {
   font-size: 35px;
-  color: #22262A;
+  color: #22262a;
 }
 
 /*Стили для контейнера карточек*/
@@ -36,7 +33,7 @@
 /* Стили для карточки */
 .card {
   width: 303px;
-  border: 3px solid #F6F7F8;
+  border: 3px solid #f6f7f8;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -67,7 +64,7 @@
   font-size: 18px;
   font-weight: 700;
   text-align: center;
-  color: #2068F8;
+  color: #2068f8;
   margin-bottom: 30px;
 }
 
@@ -75,11 +72,11 @@
 .card button,
 .card a {
   background-color: white;
-  border: 1px solid #2068F8;
+  border: 1px solid #2068f8;
   border-radius: 2px;
   padding: 10px 0;
   width: 80%;
-  color: #2068F8;
+  color: #2068f8;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -90,10 +87,10 @@
   text-align: center;
 }
 
-
 /* Страница продукта / товара */
 
 /* Вернуться на главную страницу */
+
 .arrowBack img {
   margin-right: 10px;
 }
@@ -102,12 +99,11 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #0D0C0B;
+  color: #0d0c0b;
   text-decoration: none;
   display: block;
   margin: 36px 0;
 }
-
 
 /* Стили для флекс-контейнера товара (изображение и блок с информацией о товаре, кнопки назад и добавить в тележку) */
 .product {
@@ -132,7 +128,7 @@
 
 /* Стили для названия товара */
 .product .info .title {
-  color: #22262A;
+  color: #22262a;
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
@@ -141,7 +137,7 @@
 
 /* Стили для стоимости товара */
 .product .info .price {
-  color: #2068F8;
+  color: #2068f8;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -153,7 +149,7 @@
   display: flex;
   align-items: center;
   padding-bottom: 18px;
-  border-bottom: 2px solid #F6F7F8;
+  border-bottom: 2px solid #f6f7f8;
   margin-bottom: 30px;
 }
 
@@ -203,14 +199,14 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #5E5E5E;
+  color: #5e5e5e;
   margin: 0;
   flex: 1 1;
 }
 
 /* Стили для кнопки-добавления товара в тележку */
 .product .info button {
-  background: #2068F8;
+  background: #2068f8;
   border-radius: 4px;
   width: 100%;
   padding: 14px;
@@ -241,7 +237,7 @@
 }
 
 .review h3 {
-  color: #22262A;
+  color: #22262a;
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
@@ -251,30 +247,29 @@
 
 .review textarea {
   width: 100%;
-  border: 1px solid #E0DFDC;
+  border: 1px solid #e0dfdc;
   border-radius: 2px;
   height: 66px;
   margin-bottom: 24px;
-  color: #22262A;
+  color: #22262a;
   font-weight: 500;
   font-size: 16px;
   padding: 10px;
 }
 
 .review textarea::placeholder {
-  color: #22262A;
+  color: #22262a;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-
 }
 
 .review button {
   background-color: white;
-  border: 1px solid #2068F8;
+  border: 1px solid #2068f8;
   border-radius: 2px;
   padding: 10px;
-  color: #2068F8;
+  color: #2068f8;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -284,10 +279,9 @@
   width: 170px;
 }
 
-
 .reviewField {
   padding: 38px 48px 50px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1), -1px -1px 2px rgba(0, 0, 0, 0.1);
   border-radius: 2px;
   margin-bottom: 15px;
@@ -307,7 +301,6 @@
   margin-right: 12px;
 }
 
-
 .reviewField .info .user .infoBox {
   display: flex;
   flex-direction: column;
@@ -325,11 +318,9 @@
   margin: 0;
 }
 
-
 .reviewField .info .date {
   margin: 0;
 }
-
 
 .reviewField .content .title {
   font-weight: 700;
@@ -337,7 +328,6 @@
   line-height: 22px;
   color: #000000;
 }
-
 
 /* Разделитель */
 .divider {
