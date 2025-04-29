@@ -3,6 +3,8 @@ export const Reviews = () => {
         <div className="reviewBox">
             <div className="review">
                 <h3>Reviews (189)</h3>
+                <textarea placeholder="Provide your text..."></textarea>
+                <button>Send review</button>
             </div>
         </div>
     )
