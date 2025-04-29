@@ -245,10 +245,10 @@
 }
 
 .review textarea {
-  width: 100%;
+  width: 98.5%;
   border: 1px solid #e0dfdc;
   border-radius: 2px;
-  height: 66px;
+  height: 84px;
   margin-bottom: 24px;
   color: #22262a;
   font-weight: 500;
@@ -257,7 +257,7 @@
 }
 
 .review textarea::placeholder {
-  color: #22262a;
+  color:  #737067;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
