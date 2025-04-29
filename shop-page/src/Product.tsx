@@ -15,6 +15,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import { useParams, Link } from "react-router"
+import { Reviews } from "./Reviews.tsx"
 import type { ProductType } from "./BestSeller.tsx"
 import ratingStar from "./assets/img/rating.svg"
 import whiteCart from "./assets/img/cartWhite.svg"
@@ -62,6 +63,7 @@ export const Product = () => {
                     <button><img src={whiteCart} alt="White cart icon" />Add To Cart</button>
                 </div>
             </div>
+            <Reviews />
         </div>
     )
 }
