@@ -39,31 +39,34 @@ export const Product = () => {
     }
 
     return (
-        <div>
-            <div className="arrowBack">
-            <Link to="/"><img src={arrowBack} 
-                alt="Back arrow icon to the page with product cards" />
-                Back to Best Seller
-            </Link>
-            </div>
-            <div className="product">
-                <img src={product.image} alt="Black Hoodie" />
-                <div className="info">
-                    <p className="title">{product.title}</p>
-                    <p className="price">$ {product.price}</p>
-                    <div className="rating">
-                        <p>Raiting: {product.rating.rate}</p>
-                        <img src={ratingStar} alt="yellow svg-star" />
+        <>
+            <div>
+                <div className="arrowBack">
+                    <Link to="/">
+                        <img src={arrowBack} 
+                        alt="Back arrow icon to the page with product cards" />
+                        Back to Best Seller
+                    </Link>
+                </div>
+                <div className="product">
+                    <img src={product.image} alt="Black Hoodie" />
+                    <div className="info">
+                        <p className="title">{product.title}</p>
+                        <p className="price">$ {product.price}</p>
+                        <div className="rating">
+                            <p>Raiting: {product.rating.rate}</p>
+                            <img src={ratingStar} alt="yellow svg-star" />
+                        </div>
+                        <div className="category">
+                            <span>Category:</span>
+                            <p>{product.category}</p>
+                        </div>
+                        <p className="description">{product.description}</p>
+                        <button><img src={whiteCart} alt="White cart icon" />Add To Cart</button>
                     </div>
-                    <div className="category">
-                        <span>Category:</span>
-                        <p>{product.category}</p>
-                    </div>
-                    <p className="description">{product.description}</p>
-                    <button><img src={whiteCart} alt="White cart icon" />Add To Cart</button>
                 </div>
             </div>
             <Reviews />
-        </div>
+        </>
     )
 }
