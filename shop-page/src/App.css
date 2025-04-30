@@ -226,15 +226,19 @@
 }
 
 /* Отзывы */
+
+/* Общий контейнер для отзывов ( блок с полем для нового отзыва плюс блок с существующими отзывами) */
 .reviewBox {
   margin-bottom: 200px;
 }
 
+/* блок с полем для нового отзыва */
 .review {
   display: flex;
   flex-direction: column;
 }
 
+/* Счётчик с количеством отзывов */
 .review h3 {
   color: #22262a;
   font-size: 24px;
@@ -244,6 +248,7 @@
   margin: 0 0 30px 0;
 }
 
+/* Поле для нового отзыва */
 .review textarea {
   width: 98.5%;
   border: 1px solid #e0dfdc;
@@ -256,6 +261,7 @@
   padding: 10px;
 }
 
+/* Стили для подсказки в поле для нового отзыва, куда вводить текст (атрибут placeholder стилизуется с помощью ::placeholder) */
 .review textarea::placeholder {
   color:  #737067;
   font-weight: 500;
@@ -263,6 +269,7 @@
   line-height: 20px;
 }
 
+/* Кнопка для отправки нового отзыва */
 .review button {
   background-color: white;
   border: 1px solid #2068f8;
