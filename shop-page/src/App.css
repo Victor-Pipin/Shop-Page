@@ -285,6 +285,7 @@
   width: 170px;
 }
 
+/* Контейнер для существующего (старого) отзыва */
 .reviewField {
   padding: 38px 48px 50px;
   background: #ffffff;
