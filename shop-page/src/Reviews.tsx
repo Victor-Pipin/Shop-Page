@@ -51,6 +51,10 @@ export const Reviews = () => {
                                 </div>
                                 <p className="date">{review.date}</p>
                             </div>
+                            <div className="content">
+                                <h4 className="title">`{review.title}`</h4>
+                                <p className="text">{review.text}</p>
+                            </div>
                         </div>
                     )
                 })
