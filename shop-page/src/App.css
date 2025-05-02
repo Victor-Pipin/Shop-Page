@@ -294,25 +294,30 @@
   margin-bottom: 15px;
 }
 
+/* Контейнер для информации отзыва (дата, автор, рейтинг, фото автора) */
 .reviewField .info {
   display: flex;
   justify-content: space-between;
 }
 
+/* Контейнер для информации об пользователе написавшем отзыв (автор, рейтинг, фото автора) */
 .reviewField .info .user {
   display: flex;
   flex-grow: 1;
 }
 
+/* фото автора */
 .reviewField .info .user img {
   margin-right: 12px;
 }
 
+/* Контейнер для текстовой информации об пользователе написавшем отзыв (автор, рейтинг) */
 .reviewField .info .user .infoBox {
   display: flex;
   flex-direction: column;
 }
 
+/* Стили для текста содержащего имя автора */
 .reviewField .info .user .infoBox .author {
   font-weight: 700;
   font-size: 18px;
@@ -321,10 +326,12 @@
   margin: 0;
 }
 
+/* Стили для текста содержащего рейтинг автора */
 .reviewField .info .user .infoBox .rating {
   margin: 0;
 }
 
+/* Стили для даты публикации отзыва */
 .reviewField .info .date {
   margin: 0;
 }
