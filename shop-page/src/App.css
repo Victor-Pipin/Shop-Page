@@ -336,11 +336,20 @@
   margin: 0;
 }
 
+.reviewField .content {
+  display: flex;
+  flex-direction: column;
+}
+
 .reviewField .content .title {
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
   color: #000000;
+}
+
+.reviewField .content .text {
+  margin: 0;
 }
 
 /* Разделитель */
