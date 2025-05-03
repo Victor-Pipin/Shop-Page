@@ -21,6 +21,14 @@ export const Reviews = () => {
             raiting: 5,
         },
         {
+            id: 3,
+            author: "Greg Brook",
+            title: "Classic quality",
+            text: "Stable quality over many years",
+            date: "22/05/2025",
+            raiting: 6,
+        },
+        {
             id: 2,
             author: "Max Still",
             title: "Best choice",
@@ -49,11 +57,19 @@ export const Reviews = () => {
                                         <p className="rating">{review.raiting} Rating</p>
                                     </div>
                                 </div>
-                                <p className="date">{review.date}</p>
+                                <div>
+                                    <p className="date">{review.date}</p>
+                                </div>
                             </div>
                             <div className="content">
                                 <h4 className="title">`{review.title}`</h4>
-                                <p className="text">{review.text}</p>
+                                <p className="text">
+                                    `{review.text} 
+                                    <br />
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, sunt voluptate ducimus aut 
+                                    provident, assumenda eum mollitia earum temporibus necessitatibus officiis possimus sit quibusdam 
+                                    quia veniam nemo maxime quod tenetur!`
+                                </p>
                             </div>
                         </div>
                     )
