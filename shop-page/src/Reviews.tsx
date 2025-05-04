@@ -17,7 +17,7 @@ export const Reviews = () => {
             author: "Jack Cooper",
             title: "Amazing product",
             text: "Great product, quality matches the cost",
-            date: "04/11/2025",
+            date: "04/11/2024",
             raiting: 5,
         },
         {
@@ -37,6 +37,7 @@ export const Reviews = () => {
             raiting: 9,
         }
     ])
+    const [currentReview, setCurrentReview] = useState('')
 
     return (
         <div className="reviewBox">
