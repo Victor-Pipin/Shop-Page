@@ -1,4 +1,11 @@
-import { useState } from "react"
+// currentReviewHandler:
+// e: ChangeEvent<HTMLTextAreaElement>: Здесь мы указываем, что переменная e является объектом события изменения (change event), 
+// который возникает в элементе <textarea>.
+// ChangeEvent — это встроенный тип в TypeScript, который определяет структуру события изменения для элементов формы.
+// e.currentTarget.value: currentTarget указывает на элемент, к которому привязано событие. 
+// В данном случае это <textarea>. Мы получаем текущее значение текстовой области через свойство value.
+
+import { ChangeEvent, useState } from "react"
 import avatarIcon from "./assets/img/avatarIcon.svg"
 
 type Review = {
@@ -39,11 +46,19 @@ export const Reviews = () => {
     ])
     const [currentReview, setCurrentReview] = useState('')
 
+    const currentReviewHandler = (e: ChangeEvent<HTMLTextAreaElement>) => {
+        const newValue = e.currentTarget.value
+        setCurrentReview(newValue)
+    }
+
     return (
         <div className="reviewBox">
             <div className="review">
                 <h3>Reviews (189)</h3>
-                <textarea placeholder="Provide your text..."></textarea>
+                <textarea 
+                    placeholder="Provide your text..."
+                    onChange={currentReviewHandler}
+                    ></textarea>
                 <button>Send review</button>
             </div>
             {
