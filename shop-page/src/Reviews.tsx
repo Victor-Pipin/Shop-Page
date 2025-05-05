@@ -20,7 +20,7 @@ type Review = {
 export const Reviews = () => {
     const [reviews, setReviews] = useState<Review[]>([
         {
-            id: 1,
+            id: 3,
             author: "Jack Cooper",
             title: "Amazing product",
             text: "Great product, quality matches the cost",
@@ -28,7 +28,7 @@ export const Reviews = () => {
             raiting: 5,
         },
         {
-            id: 3,
+            id: 2,
             author: "Greg Brook",
             title: "Classic quality",
             text: "Stable quality over many years",
@@ -36,19 +36,31 @@ export const Reviews = () => {
             raiting: 6,
         },
         {
-            id: 2,
+            id: 1,
             author: "Max Still",
             title: "Best choice",
             text: "The best of the analogs, not easy, but the best choice",
             date: "12/07/2025",
             raiting: 9,
-        }
+        },
     ])
     const [currentReview, setCurrentReview] = useState('')
 
     const currentReviewHandler = (e: ChangeEvent<HTMLTextAreaElement>) => {
         const newValue = e.currentTarget.value
         setCurrentReview(newValue)
+    }
+
+    const addReviewHandler = () => {
+        const newReview = {
+            id: 4,
+            author: "Phill Hort",
+            title: "Essential item",
+            text: currentReview,
+            date: "19/10/2024",
+            raiting: 8,
+        };
+        setReviews([newReview, ...reviews])
     }
 
     return (
@@ -59,7 +71,7 @@ export const Reviews = () => {
                     placeholder="Provide your text..."
                     onChange={currentReviewHandler}
                     ></textarea>
-                <button>Send review</button>
+                <button onClick={addReviewHandler}>Send review</button>
             </div>
             {
                 reviews.map((review) => {
