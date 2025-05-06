@@ -67,7 +67,8 @@ export const Reviews = () => {
         <div className="reviewBox">
             <div className="review">
                 <h3>Reviews (189)</h3>
-                <textarea 
+                <textarea
+                    value={currentReview}
                     placeholder="Provide your text..."
                     onChange={currentReviewHandler}
                     ></textarea>
