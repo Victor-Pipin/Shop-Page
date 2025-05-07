@@ -61,6 +61,7 @@ export const Reviews = () => {
             raiting: 8,
         };
         setReviews([newReview, ...reviews])
+        setCurrentReview('')
     }
 
     return (
